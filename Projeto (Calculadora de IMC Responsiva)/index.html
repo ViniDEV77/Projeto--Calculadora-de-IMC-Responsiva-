@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC Responnsiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="ilustration.svg">
+        </section>
+
+        <section id="Calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora IMC
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso Em KG
+                    </label>
+                <div class="input-field">
+                        <i class="fa-solid fa-ruler-vertical"></i>
+                        <input type="number" id="weight" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em Metros
+                    </label>
+                <div class="input-field">
+                        <i class="fa-regular fa-ruler"></i>
+                        <input type="number" step="0.01" id="height" name="" required>
+                        <span>
+                            M
+                        </span>
+                    </div>
+                </div>
+
+                <button id="Calculate">
+                    Calcular
+                </button>
+            </form>
+
+               <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span>55</span>
+                    </div>
+                </div>
+                <div id="More_infos">
+                    <a href="https://www.gov.br/saude/pt-br/assuntos/saude-brasil/eu-quero-ter-peso-saudavel/noticias/2017/imc-voce-sabe-calcular-seu-peso-adequado">
+                        Mais Informaçoes Sobre Seu IMC
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
